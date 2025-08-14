@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "straming_eventhouse",
+    "description": "straming_eventhouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ab527553-99ed-920c-4c7f-55d2fcfcfb42"
+  }
+}

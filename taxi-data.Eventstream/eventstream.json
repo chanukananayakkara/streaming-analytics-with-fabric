@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "id": "cee8944a-d2db-4d31-860b-d916eebc25e4",
+      "name": "taxi",
+      "type": "SampleData",
+      "properties": {
+        "type": "YellowTaxi"
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "c8a1404b-a4cd-48b5-b8d8-c01902769cfb",
+      "name": "255d03cf-65e9-4830-9e08-d052a9490313",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "DirectIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "ab527553-99ed-920c-4c7f-55d2fcfcfb42",
+        "tableName": "taxi",
+        "connectionName": "taxi-table",
+        "mappingRuleName": "taxi_mapping"
+      },
+      "inputNodes": [
+        {
+          "name": "taxi-data-stream"
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "c4f780d2-0edb-4e51-956e-aec20af3174c",
+      "name": "taxi-data-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": []
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
